@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="425.0" prefWidth="1110.0" stylesheets="@css.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Stats.AvMedMod.AverageModeMedianController">
+    <Pane id="card" layoutX="45.0" layoutY="50.0" prefHeight="250.0" prefWidth="300.0" stylesheets="@css.css">
+        <Text fill="WHITE" layoutX="26.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="T3-resin uptake test">
+            <font>
+                <Font name="Poppins ExtraBold" size="23.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" layoutX="30.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Moyenne">
+            <font>
+                <Font name="Poppins Medium" size="18.0" />
+            </font>
+        </Text>
+        <Text fx:id="t3_average" fill="WHITE" layoutX="200.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="">
+            <font>
+                <Font name="Roboto" size="18.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" layoutX="30.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Médiane">
+            <font>
+                <Font name="Poppins Medium" size="18.0" />
+            </font>
+        </Text>
+        <Text fx:id="t3_median" fill="WHITE" layoutX="200.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="">
+            <font>
+                <Font name="Roboto" size="18.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" layoutX="29.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mode">
+            <font>
+                <Font name="Poppins Medium" size="19.0" />
+            </font>
+        </Text>
+        <Text fx:id="t3_mode" fill="WHITE" layoutX="200.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="">
+            <font>
+                <Font name="Roboto" size="18.0" />
+            </font>
+        </Text>
+    </Pane>
+   <Pane id="card" layoutX="400.0" layoutY="50.0" prefHeight="250.0" prefWidth="300.0" stylesheets="@css.css">
+      <children>
+         <Text fill="WHITE" layoutX="26.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Serum thyroxin">
+            <font>
+               <Font name="Poppins ExtraBold" size="23.0" />
+            </font>
+         </Text>
+         <Text fill="WHITE" layoutX="30.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Moyenne">
+            <font>
+               <Font name="Poppins Medium" size="18.0" />
+            </font>
+         </Text>
+         <Text fx:id="total_serum_thyroxin_average" fill="WHITE" layoutX="200.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="">
+            <font>
+               <Font name="Roboto" size="18.0" />
+            </font>
+         </Text>
+         <Text fill="WHITE" layoutX="30.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Médiane">
+            <font>
+               <Font name="Poppins Medium" size="18.0" />
+            </font>
+         </Text>
+         <Text fx:id="total_serum_thyroxin_median" fill="WHITE" layoutX="200.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="">
+            <font>
+               <Font name="Roboto" size="18.0" />
+            </font>
+         </Text>
+         <Text fill="WHITE" layoutX="29.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mode">
+            <font>
+               <Font name="Poppins Medium" size="19.0" />
+            </font>
+         </Text>
+         <Text fx:id="total_serum_thyroxin_mode" fill="WHITE" layoutX="200.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="">
+            <font>
+               <Font name="Roboto" size="18.0" />
+            </font>
+         </Text>
+      </children>
+   </Pane>
+   <Pane id="card" layoutX="755.0" layoutY="50.0" prefHeight="250.0" prefWidth="300.0" stylesheets="@css.css">
+      <children>
+         <Text fill="WHITE" layoutX="32.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total serum triiodothyronine" textAlignment="CENTER" wrappingWidth="235.81600952148438">
+            <font>
+               <Font name="Poppins ExtraBold" size="23.0" />
+            </font>
+         </Text>
+         <Text fill="WHITE" layoutX="30.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Moyenne">
+            <font>
+               <Font name="Poppins Medium" size="18.0" />
+            </font>
+         </Text>
+         <Text fx:id="total_serum_triiodothyronine_average" fill="WHITE" layoutX="200.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="">
+            <font>
+               <Font name="Roboto" size="18.0" />
+            </font>
+         </Text>
+         <Text fill="WHITE" layoutX="30.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Médiane">
+            <font>
+               <Font name="Poppins Medium" size="18.0" />
+            </font>
+         </Text>
+         <Text fx:id="total_serum_triiodothyronine_median" fill="WHITE" layoutX="200.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="">
+            <font>
+               <Font name="Roboto" size="18.0" />
+            </font>
+         </Text>
+         <Text fill="WHITE" layoutX="29.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mode">
+            <font>
+               <Font name="Poppins Medium" size="19.0" />
+            </font>
+         </Text>
+         <Text fx:id="total_serum_triiodothyronine_mode" fill="WHITE" layoutX="200.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="">
+            <font>
+               <Font name="Roboto" size="18.0" />
+            </font>
+         </Text>
+      </children>
+   </Pane>
+</Pane>

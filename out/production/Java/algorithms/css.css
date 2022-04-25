@@ -1,0 +1,6 @@
+.button-selected {
+    -fx-background-color: #8472DF;
+    -fx-text-fill: #eae4e4;
+    -fx-font-family: Poppins;
+    -fx-font-size: 14px;
+}

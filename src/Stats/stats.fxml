@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="pane" prefHeight="650.0" prefWidth="1110.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Stats.StatController">
+      <Text layoutX="453.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Statistiques">
+         <font>
+            <Font name="Poppins Regular" size="35.0" />
+         </font>
+      </Text>
+      <Pane layoutX="455.0" layoutY="80.0" prefHeight="3.0" prefWidth="200.0" style="-fx-background-color: black;" />
+      <Pane layoutY="115.0" prefHeight="100.0" prefWidth="1110.0">
+            <JFXButton onAction="#medianModeAvg" focusTraversable="false" layoutX="90.0" layoutY="30.0" prefWidth="225.0" style="-fx-background-color: #42a5f5;" text="Moyenne, Median, Mode" textFill="WHITE">
+               <font>
+                  <Font name="Poppins Medium" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#boxPlot" focusTraversable="false" layoutX="350.0" layoutY="30.0" prefHeight="35.0" prefWidth="180.0" style="-fx-background-color: #42a5f5;" text="Boite à moustache" textFill="WHITE">
+               <font>
+                  <Font name="Poppins Medium" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#histograms" layoutX="565.0" layoutY="30.0" style="-fx-background-color: #42a5f5;" text="Histogrammes" textFill="WHITE">
+               <font>
+                  <Font name="Poppins Medium" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#scatter" layoutX="740.0" layoutY="30.0" style="-fx-background-color: #42a5f5;" text="Diagrammes de dispersions" textFill="WHITE">
+               <font>
+                  <Font name="Poppins Medium" size="16.0" />
+               </font>
+            </JFXButton>
+      </Pane>
+      <Pane id="charts_pane" fx:id="charts_pane" layoutY="190.0" prefHeight="425.0" prefWidth="1110.0" />
+</Pane>

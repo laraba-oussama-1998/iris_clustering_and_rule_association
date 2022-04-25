@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane id="menu" fx:id="menu" prefHeight="650.0" prefWidth="250.0" stylesheets="@../css.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Menu.MenuController">
+    <Text fill="WHITE" layoutX="15.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Projet Data mining">
+        <font>
+            <Font name="Poppins Regular" size="22.0" />
+        </font>
+    </Text>
+    <Pane id="hr" layoutX="28.0" layoutY="105.0" prefHeight="2.0" prefWidth="195.0" />
+    <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="20.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../assets/round_description_white_48dp.png" />
+      </image></ImageView>
+    <JFXButton focusTraversable="false" layoutY="165.0" onAction="#showDescription" prefHeight="25.0" prefWidth="250.0" text="Description" textFill="#e0e0e0">
+      <font>
+         <Font name="Poppins Regular" size="20.0" />
+      </font></JFXButton>
+    <JFXButton focusTraversable="false" layoutY="245.0" onAction="#importData" prefWidth="250.0" text="Importer" textFill="#e0e0e0">
+        <font>
+            <Font name="Poppins Regular" size="20.0" />
+        </font>
+    </JFXButton>
+    <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="20.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../assets/round_label_important_white_48dp.png" />
+      </image></ImageView>
+    <JFXButton focusTraversable="false" layoutY="325.0" onAction="#stats" prefWidth="250.0" text="Statistiques" textFill="#e0e0e0">
+        <font>
+            <Font name="Poppins Regular" size="20.0" />
+        </font>
+    </JFXButton>
+    <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="20.0" layoutY="329.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../assets/round_query_stats_white_24dp.png" />
+      </image></ImageView>
+   <JFXButton onAction="#algo" focusTraversable="false" layoutX="1.0" layoutY="405.0" prefWidth="250.0" text="Algorithmes" textFill="#e0e0e0">
+      <font>
+         <Font name="Poppins Regular" size="20.0" />
+      </font>
+   </JFXButton>
+   <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="20.0" layoutY="409.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../assets/baseline_code_white_48dp.png" />
+      </image>
+   </ImageView>
+</Pane>

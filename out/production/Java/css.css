@@ -1,0 +1,9 @@
+#menu{
+	-fx-background-color:#40444B;
+}
+#hr {
+	-fx-background-color:#ffffff;
+}
+.option:hover {
+    -fx-background-color: #30363F;
+}

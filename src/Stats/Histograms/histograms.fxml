@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="500.0" prefWidth="1110.0" style="-fx-background-color: #f4f4f4;" stylesheets="@../css.css"
+      xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="Stats.Histograms.HistogramsController">
+
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f4f4f4" height="50.0" layoutX="35.0" layoutY="36.0"
+               stroke="#ffffff00" strokeType="INSIDE" width="200.0">
+        <effect>
+            <DropShadow color="#0000003d" height="5.0" offsetX="1.45" offsetY="2.0" radius="2.0" width="5.0"/>
+        </effect>
+    </Rectangle>
+    <JFXButton fx:id="t3_button" focusTraversable="false" layoutX="35.0" layoutY="36.0" minHeight="40.0"
+               onAction="#t3Histogram" prefHeight="50.0" prefWidth="200.0" stylesheets="@../css.css"
+               text="T3-resin uptake test">
+        <effect>
+            <DropShadow offsetY="5.0"/>
+        </effect>
+        <font>
+            <Font name="Poppins Regular" size="14.0"/>
+        </font>
+    </JFXButton>
+
+
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f4f4f4" height="50.0" layoutX="245.0" layoutY="36.0"
+               stroke="#ffffff00" strokeType="INSIDE" width="200.0">
+        <effect>
+            <DropShadow color="#0000003d" height="5.0" offsetX="1.45" offsetY="2.0" radius="2.0" width="5.0"/>
+        </effect>
+    </Rectangle>
+    <JFXButton fx:id="total_serum_thyroxin_button" focusTraversable="false" layoutX="245.0" layoutY="36.0"
+               minHeight="40.0" onAction="#drawTotalSerumThyroxin" prefHeight="50.0" prefWidth="200.0"
+               text="Total Serum Thyroxin">
+        <effect>
+            <DropShadow offsetY="5.0"/>
+        </effect>
+        <font>
+            <Font name="Poppins Regular" size="14.0"/>
+        </font>
+    </JFXButton>
+
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f4f4f4" height="50.0" layoutX="455.0" layoutY="36.0"
+               stroke="#ffffff00" strokeType="INSIDE" width="200.0">
+        <effect>
+            <DropShadow color="#0000003d" height="5.0" offsetX="1.45" offsetY="2.0" radius="2.0" width="5.0"/>
+        </effect>
+    </Rectangle>
+    <JFXButton fx:id="total_serum_triiodothyronine_button" focusTraversable="false" layoutX="455.0" layoutY="36.0"
+               minHeight="40.0" onAction="#drawTotalSerumTriiodothyronine" prefHeight="50.0" prefWidth="200.0"
+               text="Total Serum Triiodothyronine">
+        <effect>
+            <DropShadow offsetY="5.0"/>
+        </effect>
+        <font>
+            <Font name="Poppins Regular" size="14.0"/>
+        </font>
+    </JFXButton>
+
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f4f4f4" height="50.0" layoutX="665.0" layoutY="36.0"
+               stroke="#ffffff00" strokeType="INSIDE" width="200.0">
+        <effect>
+            <DropShadow color="#0000003d" height="5.0" offsetX="1.45" offsetY="2.0" radius="2.0" width="5.0"/>
+        </effect>
+    </Rectangle>
+    <JFXButton fx:id="basal_thyroid_stimulating_hormone_button" focusTraversable="false" layoutX="665.0" layoutY="36.0"
+               minHeight="40.0" onAction="#draw_basal_thyroid_stimulating_hormone" prefHeight="50.0" prefWidth="200.0"
+               text="Basal Thyroid-Stimulating Hormone">
+        <effect>
+            <DropShadow offsetY="5.0"/>
+        </effect>
+        <font>
+            <Font name="Poppins Regular" size="14.0"/>
+        </font>
+    </JFXButton>
+
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f4f4f4" height="50.0" layoutX="875.0" layoutY="36.0"
+               stroke="#ffffff00" strokeType="INSIDE" width="200.0">
+        <effect>
+            <DropShadow color="#0000003d" height="5.0" offsetX="1.45" offsetY="2.0" radius="2.0" width="5.0"/>
+        </effect>
+    </Rectangle>
+    <JFXButton fx:id="maximal_absolute_difference_of_TSH_value_button" focusTraversable="false" layoutX="875.0"
+               layoutY="36.0" minHeight="40.0" onAction="#draw_maximal_absolute_difference_of_TSH_value_button"
+               prefHeight="50.0" prefWidth="200.0" text="Maximal absolute difference of TSH value">
+        <effect>
+            <DropShadow offsetY="5.0"/>
+        </effect>
+        <font>
+            <Font name="Poppins Regular" size="14.0"/>
+        </font>
+    </JFXButton>
+
+    <ScrollPane id="pane" fx:id="scroll" layoutX="10.0" layoutY="100.0" prefHeight="360.0" prefWidth="1090.0"
+                stylesheets="@../css.css">
+        <AnchorPane fx:id="anchor" prefHeight="315.0" prefWidth="1085.0"/>
+    </ScrollPane>
+</Pane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane id="pane" fx:id="pane" prefHeight="650.0" prefWidth="1110.0" stylesheets="@css.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dataset.DatasetController">
+   <children>
+      <TableView id="table" fx:id="table" disable="true" opacity="0.0" prefHeight="650.0" prefWidth="1110.0">
+        <columns>
+          <TableColumn id="target" fx:id="target" minWidth="185.0" prefWidth="75.0" text="Classe" />
+          <TableColumn id="attribute_1" fx:id="attribute_1" minWidth="170.0" prefWidth="75.0" text="T3-resin uptake test" />
+            <TableColumn id="attribute_2" fx:id="attribute_2" minWidth="170.0" prefWidth="75.0" text="Total Serum thyroxin" />
+            <TableColumn id="attribute_3" fx:id="attribute_3" minWidth="170.0" prefWidth="75.0" text="Total serum triiodothyronine" />
+            <TableColumn id="attribute_4" fx:id="attribute_4" minWidth="170.0" prefWidth="75.0" text="Thyroid-stimulating hormone" />
+            <TableColumn id="attribute_5" fx:id="attribute_5" minWidth="170.0" prefWidth="75.0" text="Attribut 5" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>
